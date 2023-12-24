@@ -264,8 +264,8 @@ function getCube(num) {
  *   10 => 55
  */
 function getFibonacciNumber(index) {
-  const Array =[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233];
-    return Array[index];
+  const Array = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233];
+  return Array[index];
 }
 
 /**
@@ -296,11 +296,11 @@ function getSumToN(n) {
  */
 function getSumOfDigits(num) {
   const array = `${num}`.split('').map((digit) => +digit);
-    let summ = 0;
-    for (let i = 0; i < array.length; i += 1) {
-      summ += array[i];
-    }
-    return summ;
+  let summ = 0;
+  for (let i = 0; i < array.length; i += 1) {
+    summ += array[i];
+  }
+  return summ;
 }
 
 /**
@@ -315,12 +315,12 @@ function getSumOfDigits(num) {
  *   15  => false
  */
 function isPowerOfTwo(num) {
-  if (num % 2 !== 0) return false;
-  
-    while (num % 2 === 0 && num !== 2) {
-      num /= 2;
-    }
-    return num === 2;
+  let num1 = num;
+  if (num1 % 2 !== 0) return false;
+  while (num1 % 2 === 0 && num1 !== 2) {
+    num1 /= 2;
+  }
+  return num1 === 2;
 }
 
 /**
@@ -564,7 +564,7 @@ function getIntegerPartNumber(number) {
  */
 function getSumOfNumbers(x1, x2, x3) {
   const summ = x1 + x2 + x3;
-    return summ.toFixed(1);
+  return summ.toFixed(1);
 }
 
 /**
@@ -626,7 +626,7 @@ function getHypotenuse(a, b) {
  * 10 => 5
  * 15 => 8
  */
-function getCountOfOddNumbers(/*number*/) {
+function getCountOfOddNumbers(/* number */) {
   throw new Error('Not implemented');
 }
 
